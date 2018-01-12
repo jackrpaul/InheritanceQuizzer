@@ -27,7 +27,8 @@ public class runner
 				Scanner userName = new Scanner(System.in);
 				name = userName.nextLine();
 				quizContinues = true;
-				System.out.println("I will now quiz you on 7 inheritance questions.");
+				System.out.println("Hello, + " + name + "! I will now quiz you on 7 inheritance questions.");
+				System.out.println("");
 			}
 		private static void askNumberOfQuestions()
 			{
@@ -248,7 +249,7 @@ public class runner
 		private static void reportScore()
 			{
 				System.out.println("Alright! That's the end of the quiz.");
-				int percent = (numCorrect / 7);
+				int percent = (numCorrect / 7) * 100;
 				System.out.println("You got " + numCorrect + " out of " + 7 + " questions right! That's " + percent + "%!");
 			}
 		private static void askForContinue()
